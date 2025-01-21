@@ -10,7 +10,7 @@ phases:
       - DOCKER_USERNAME=garima.symbiosis@gmail.com
       - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
       - echo Logging in to Amazon ECR...
-      - REPOSITORY_URI=654654380350.dkr.ecr.us-east-1.amazonaws.com/tekair/datastore
+      - REPOSITORY_URI=654654380350.dkr.ecr.us-east-1.amazonaws.com/tekair/
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $REPOSITORY_URI
 
 
