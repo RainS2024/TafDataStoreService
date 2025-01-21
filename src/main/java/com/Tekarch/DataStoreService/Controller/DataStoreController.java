@@ -71,7 +71,7 @@ public class DataStoreController {
     }
 
     @PostMapping("/flights")
-    public ResponseEntity<Flight> createFlight(@RequestBody Flight flight) {
+    public ResponseEntity<Flight> createFlight(@Valid @RequestBody Flight flight) {
         Flight createdFlight = dataStoreService.createFlight(flight);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdFlight);
     }

@@ -3,6 +3,7 @@ package com.Tekarch.DataStoreService.DTO;
 import com.Tekarch.DataStoreService.Model.Booking;
 import com.Tekarch.DataStoreService.Model.Flight;
 import com.Tekarch.DataStoreService.Model.User;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
