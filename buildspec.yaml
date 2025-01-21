@@ -18,9 +18,9 @@ phases:
     commands:
       - echo Build started on `date`
       - set -e  # Exit on any error
-      - echo Building UserMS...
+      - echo Building DatastoreMS...
       - ./gradlew clean build -x test
-      - IMAGE_REPO_NAME=datastore-service-tekair
+      - IMAGE_REPO_NAME=datastore
       - IMAGE_TAG=latest
       - echo "IMAGE_REPO_NAME=$IMAGE_REPO_NAME"
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
