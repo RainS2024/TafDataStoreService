@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/datastore")
 public class DataStoreController {
     private static final Logger logger = LogManager.getLogger(DataStoreController.class);
